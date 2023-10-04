@@ -21,6 +21,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -43,7 +47,9 @@ class _HomePageState extends State<HomePage> {
                 var res = await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SimpleBarcodeScannerPage(),
+                      builder: (
+
+                      context) => const SimpleBarcodeScannerPage(),
                     ));
                 setState(() {
                   if (res is String) {
